@@ -16,25 +16,25 @@ header {
   justify-content: space-between;
   width: 375px;
   height: 60px;
-  align-items: center;   
+  align-items: center;
 }
 
 .toolbar {
   display: flex;  
   justify-content: space-between; 
   width: 375px;
-  margin: 34px 34px; 
-  align-items: center; 
+  margin: 34px 34px;
+  align-items: center;
 }
-  
+ 
 .logo {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: #6070FF;
-  }
+}
 
-.social{
+.social {
   display: flex;
   justify-content: space-between;
   width: 40%;
