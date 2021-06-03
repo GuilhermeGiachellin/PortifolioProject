@@ -87,7 +87,8 @@ h2 {
   height: 718px;
 }
 
-ul, li {
+ul, 
+li {
   list-style: none;
   display: inline;
   padding: 1px 13px;
