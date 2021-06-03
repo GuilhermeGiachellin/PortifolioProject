@@ -1,8 +1,7 @@
-* { font-family: 'Poppins', sans-serif; }
+* {font-family: 'Poppins', sans-serif;}
 
 .container {
   display: flex;
-  
   flex-direction: column;
   width: 375px;
   height: 718px;
@@ -12,7 +11,6 @@
 
 header {
   display: flex;
-
   justify-content: space-between;
   width: 375px;
   height: 60px;
@@ -21,7 +19,6 @@ header {
 
 .toolbar {
   display: flex;
-
   justify-content: space-between;
   width: 375px;
   margin: 34px 34px;
@@ -63,7 +60,7 @@ h1 {
 }
 
 a {
-  color: #7F8cff;
+  color: #7d8cff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
