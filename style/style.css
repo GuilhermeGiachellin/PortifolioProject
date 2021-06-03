@@ -34,12 +34,6 @@ header {
   color: #6070ff;
 }
 
-.social {
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-}
-
 p {
   color: #344563;
   font-size: 16px;
@@ -66,6 +60,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 h2 {
@@ -73,6 +68,11 @@ h2 {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+}
+
+.connect {
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .content {
@@ -85,4 +85,25 @@ h2 {
   padding-left: 10px;
   width: 375px;
   height: 718px;
+}
+
+ul, li {
+  list-style: none;
+  display: inline;
+  padding: 1px 13px;
+  margin-left: -3px;
+}
+
+h2 a:hover {
+  background-color: #6070ff;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+h2 a:active {
+  background-color: #2230d2;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 8px;
 }
