@@ -2,13 +2,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+.container-works {
+  display: grid;
+  grid-template-columns: 100%;
   width: 375px;
-  height: 718px;
+  height: 100%;
   position: relative;
   margin: 0 auto;
+  background-color: #f7f7f9;
 }
 
 header {
@@ -17,6 +18,8 @@ header {
   width: 375px;
   height: 60px;
   align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
 }
 
 .toolbar {
@@ -41,6 +44,7 @@ p {
   font-weight: 400;
   left: 24px;
   top: 276px;
+  margin: 7px 24px 7px 24px;
 }
 
 h1 {
@@ -53,6 +57,7 @@ h1 {
   height: 150px;
   left: 24px;
   top: 114px;
+  margin: 7px 24px 7px 24px;
 }
 
 a {
@@ -63,16 +68,10 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  color: #6070ff;
-}
-
-.connect {
+#connect {
   font-weight: 500;
   font-size: 16px;
+  margin: 7px 24px 7px 24px;
 }
 
 .content {
@@ -82,29 +81,201 @@ h2 {
   background-image: url(../assets/background.png);
   background-repeat: no-repeat;
   background-size: 375px 668px;
-  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
   width: 375px;
   height: 718px;
+  margin: 0 auto;
 }
 
-ul,
-li {
+.content ul,
+li{
   list-style: none;
   display: inline;
   padding: 1px 13px;
-  margin-left: -3px;
+  margin: -3px;
 }
 
-h2 a:hover {
+.contact ul,
+li{
+  list-style: none;
+  display: inline;
+  padding: 1px 13px;
+  margin: -3px;
+}
+
+#connect a:hover {
   background-color: #6070ff;
   color: rgb(255, 255, 255);
   padding: 5px;
   border-radius: 8px;
 }
 
-h2 a:active {
+#connect a:active {
   background-color: #2230d2;
   color: rgb(255, 255, 255);
   padding: 5px;
+  border-radius: 8px;
+}
+
+.big { 
+  height: 596px !important;
+}
+
+.works {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 327px;
+  height: 540px;
+  border-radius: 16px;
+  margin: 44px 24px 44px 24px;
+  padding-inline-start: 0px;
+}
+
+.works img{
+  margin: 1px 15px 1px 5px;
+}
+
+.works h1 {
+  font-weight: 700;
+  color: #172b4d;
+  width: 295px;
+  height: 36px;
+  margin: 1px 15px 1px 5px;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.big h1 {
+  height: 88px;
+}
+
+.works ul li{
+  font-weight: 600;
+  color: #344563;
+  font-size: 13px;
+  display: inline;
+  height: 13px;
+  width: 279px;
+  padding: 1px 10px;
+}
+
+.works ul {
+  padding-inline-start: 0px;
+  margin: 10px 1px;
+}
+
+#qualification {
+  list-style: circle;
+  color: #7a869a;
+}
+
+.works-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 295px;
+  height: 332px;
+  margin: 12px 16px 16px 16px;
+}
+
+.works p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 10px 10px;
+}
+
+.languages {
+  margin: 5px 1px 45px 1px !important;
+}
+
+.works .languages li {
+  font-weight: 400;
+  font-size: 12px;
+  display: inline;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin-left: 10px;
+  margin-top: 1px;
+  position: relative;
+}
+
+.works h2 {
+  margin: 50px 10px 15px 10px;
+}
+
+.works h2 a {
+  color: #396df2;
+  border: 2px solid #396df2;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.works h2 a:hover {  
+  background-color: #6070ff;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.works h2 a:active {
+  background-color: #2230d2;
+  border: 2px solid #2230d2;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 1125px;
+  width: 375px;  
+  margin: 0 auto;
+}
+
+.contact h1 {
+  height: 101px;
+  width: 327px;
+  margin: 114px 24px 5px 24px;
+}
+
+.contact p {
+  height: 144px;
+  width: 327px;
+  margin: 2px 24px 12px 24px;
+}
+
+.contact h2 a {
+  color: #396df2;
+  border: 2px solid #396df2;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 16px;
+}
+
+.contact h2 a:hover {  
+  background-color: #6070ff;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.contact h2 a:active {
+  background-color: #2230d2;
+  border: 2px solid #2230d2;
+  color: rgb(255, 255, 255);
+  padding: 10px;
   border-radius: 8px;
 }
