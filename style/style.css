@@ -103,6 +103,27 @@ li {
   margin: -3px;
 }
 
+.works h2 a {
+  color: #396df2;
+  border: 2px solid #396df2;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.contact h2 a {
+  color: #396df2;
+  border: 2px solid #396df2;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 16px;
+}
+
 .contact h2 a:hover {
   background-color: #6070ff;
   color: rgb(255, 255, 255);
@@ -130,7 +151,7 @@ li {
   border: 2px solid #2230d2;
   color: rgb(255, 255, 255);
   padding: 10px;
-  border-radius: 8px;  
+  border-radius: 8px;
 }
 
 #connect a:hover {
@@ -239,16 +260,6 @@ li {
   margin: 50px 10px 15px 10px;
 }
 
-.works h2 a {
-  color: #396df2;
-  border: 2px solid #396df2;
-  border-radius: 8px;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -267,15 +278,4 @@ li {
   height: 144px;
   width: 327px;
   margin: 2px 24px 12px 24px;
-}
-
-.contact h2 a {
-  color: #396df2;
-  border: 2px solid #396df2;
-  border-radius: 8px;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  margin: 16px;
 }
