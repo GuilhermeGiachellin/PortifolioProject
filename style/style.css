@@ -74,6 +74,12 @@ a {
   margin: 7px 24px 7px 24px;
 }
 
+#connect2 {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 7px 24px 7px 24px;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -139,7 +145,7 @@ li {
   border-radius: 8px;
 }
 
-.works h2 a:hover {  
+.works h2 a:hover {
   background-color: #6070ff;
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -218,7 +224,7 @@ li {
   margin: 10px 1px;
 }
 
-#qualification {
+.qualification {
   list-style: circle;
   color: #7a869a;
 }
