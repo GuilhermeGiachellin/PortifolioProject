@@ -16,7 +16,3 @@
 - GitHub: @GuilhermeGiachellin(https://github.com/GuilhermeGiachellin))
 - LinkedIn: Guilherme Giachellin(https://www.linkedin.com/in/guilherme-giachellin-2599771b9/)
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
-
