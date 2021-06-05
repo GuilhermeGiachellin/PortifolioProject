@@ -3,7 +3,7 @@
 }
 
 .container-works {
-  display: grid;  
+  display: grid;
   justify-content: center;
   width: 375px;
   height: 100%;
@@ -100,7 +100,7 @@ a {
 
 .qualifications {
   list-style: circle inside url(assets/Counter.png) !important;
-  color: #7A869A !important;
+  color: #7a869a;
 }
 
 .content ul {
@@ -111,7 +111,7 @@ a {
 li {
   list-style: none;
   display: inline;
-  padding: 1px 15px 1px 5px;  
+  padding: 1px 15px 1px 5px;
 }
 
 .contact ul li {
@@ -186,12 +186,17 @@ li {
   border-radius: 8px;
 }
 
+.works ul {
+  padding-inline-start: 1px;
+  margin: 10px 16px 10px 13px;
+}
+
 .big {
   min-height: 612px;
 }
 
 .works {
-  display: flex;    
+  display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(255, 255, 255);
@@ -200,8 +205,8 @@ li {
   border-radius: 16px;
   margin: 88px 24px 88px 24px;
   padding: 1px 1px 1px 1px;
-  border: 1px solid #DFE1E6;
-  box-sizing: border-box;  
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
 }
 
 .works img {
@@ -237,11 +242,6 @@ li {
   padding: 1px 20px 1px 1px;
 }
 
-.works ul {
-  padding-inline-start: 1px;
-  margin: 10px 16px 10px 13px;
-}
-
 .works-text {
   display: flex;
   flex-direction: column;
@@ -270,7 +270,7 @@ li {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  margin: 1px 1px 1px 1px; 
+  margin: 1px 1px 1px 1px;
   position: relative;
 }
 
@@ -283,7 +283,7 @@ li {
   flex-direction: column;
   height: 1200px;
   width: 375px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .contact h1 {
@@ -309,7 +309,7 @@ h3 {
   font-size: 20px;
   line-height: 24px;
   margin: 5px 5px;
-  color: #000000;
+  color: #000;
 }
 
 #about-lenguages {
@@ -319,14 +319,14 @@ h3 {
   padding-inline-start: 1px;
 }
 
-#about-lenguages ul{
+#about-lenguages ul {
   display: inline;
   width: 100%;
   height: 66.72px;
   padding-inline-start: 1px;
 }
 
-#about-lenguages ul li{
+#about-lenguages ul li {
   padding: 2px 2px;
   margin: 0 0;
   width: 0;
@@ -358,7 +358,7 @@ h4 {
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
-  color: #253858;  
+  color: #253858;
 }
 
 .section-title {
