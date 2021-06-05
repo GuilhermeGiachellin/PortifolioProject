@@ -98,9 +98,13 @@ a {
   margin: 0 auto;
 }
 
-.qualifications {
-  list-style: circle inside url(assets/Counter.png) !important;
-  color: #7a869a;
+.qualifications {  
+  color: #7a869a !important;
+  padding: 0 0;
+}
+
+.qualifications img {
+  margin: 0 0;
 }
 
 .content ul {
@@ -239,7 +243,7 @@ li {
   display: inline;
   height: 13px;
   width: 279px;
-  padding: 1px 20px 1px 1px;
+  padding: 0 0;
 }
 
 .works-text {
