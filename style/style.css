@@ -3,13 +3,18 @@
 }
 
 .container-works {
-  display: grid;
-  grid-template-columns: 100%;
+  display: grid;  
+  justify-content: center;
   width: 375px;
   height: 100%;
   position: relative;
   margin: 0 auto;
   background-color: #f7f7f9;
+  padding-inline-start: 3px;
+}
+
+.container-works ul {
+  padding-inline-start: 1px;
 }
 
 header {
@@ -77,7 +82,7 @@ a {
 #connect2 {
   font-weight: 500;
   font-size: 16px;
-  margin: 7px 24px 7px 24px;
+  margin: 1px 24px 34px 24px;
 }
 
 .content {
@@ -93,16 +98,23 @@ a {
   margin: 0 auto;
 }
 
+.qualifications {
+  list-style: circle inside url(assets/Counter.png) !important;
+  color: #7A869A !important;
+}
+
+.content ul {
+  margin: 26px 35px 1px 35px;
+}
+
 .content ul,
 li {
   list-style: none;
   display: inline;
-  padding: 1px 13px;
-  margin: -3px;
+  padding: 1px 15px 1px 5px;  
 }
 
-.contact ul,
-li {
+.contact ul li {
   list-style: none;
   display: inline;
   padding: 1px 13px;
@@ -111,7 +123,7 @@ li {
 
 .works h2 a {
   color: #396df2;
-  border: 2px solid #396df2;
+  border: 1px solid #396df2;
   border-radius: 8px;
   padding: 10px;
   font-weight: 500;
@@ -121,13 +133,13 @@ li {
 
 .contact h2 a {
   color: #396df2;
-  border: 2px solid #396df2;
+  border: 1px solid #396df2;
   border-radius: 8px;
   padding: 10px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  margin: 16px;
+  margin: 16px 25px 16px 35px;
 }
 
 .contact h2 a:hover {
@@ -139,7 +151,7 @@ li {
 
 .contact h2 a:active {
   background-color: #2230d2;
-  border: 2px solid #2230d2;
+  border: 1px solid #2230d2;
   color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 8px;
@@ -154,7 +166,7 @@ li {
 
 .works h2 a:active {
   background-color: #2230d2;
-  border: 2px solid #2230d2;
+  border: 1px solid #2230d2;
   color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 8px;
@@ -175,24 +187,25 @@ li {
 }
 
 .big {
-  height: 596px !important;
+  min-height: 612px;
 }
 
 .works {
-  display: flex;
-  position: relative;
+  display: flex;    
   flex-direction: column;
   justify-content: center;
   background-color: rgb(255, 255, 255);
   width: 327px;
-  height: 540px;
+  min-height: 566px;
   border-radius: 16px;
-  margin: 44px 24px 44px 24px;
-  padding-inline-start: 1px;
+  margin: 88px 24px 88px 24px;
+  padding: 1px 1px 1px 1px;
+  border: 1px solid #DFE1E6;
+  box-sizing: border-box;  
 }
 
 .works img {
-  margin: 1px 15px 1px 5px;
+  margin: 16px 16px 1px 16px;
 }
 
 .works h1 {
@@ -200,13 +213,18 @@ li {
   color: #172b4d;
   width: 295px;
   height: 36px;
-  margin: 1px 15px 1px 5px;
+  margin: 1px 15px 1px 16px;
   font-size: 32px;
   line-height: 44px;
 }
 
 .big h1 {
   height: 88px;
+}
+
+.big .works ul {
+  padding-inline-start: 1px;
+  margin: 7px 16px 7px 13px;
 }
 
 .works ul li {
@@ -216,17 +234,12 @@ li {
   display: inline;
   height: 13px;
   width: 279px;
-  padding: 1px 10px;
+  padding: 1px 20px 1px 1px;
 }
 
 .works ul {
   padding-inline-start: 1px;
-  margin: 10px 1px;
-}
-
-.qualification {
-  list-style: circle;
-  color: #7a869a;
+  margin: 10px 16px 10px 13px;
 }
 
 .works-text {
@@ -242,11 +255,11 @@ li {
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
-  margin: 10px 10px;
+  margin: 10px 16px 6px 16px;
 }
 
 .languages {
-  margin: 5px 1px 45px 1px !important;
+  margin: 5px 1px 45px 1px;
 }
 
 .works .languages li {
@@ -257,21 +270,20 @@ li {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  margin-left: 10px;
-  margin-top: 1px;
+  margin: 1px 1px 1px 1px; 
   position: relative;
 }
 
 .works h2 {
-  margin: 50px 10px 15px 10px;
+  margin: 30px 24px 50px 16px;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  height: 1125px;
+  height: 1200px;
   width: 375px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 .contact h1 {
@@ -284,4 +296,77 @@ li {
   height: 144px;
   width: 327px;
   margin: 2px 24px 12px 24px;
+}
+
+.big .works h1 {
+  width: 295px;
+  height: 80px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 5px 5px;
+  color: #000000;
+}
+
+#about-lenguages {
+  display: inline;
+  width: 100%;
+  height: 600px;
+  padding-inline-start: 1px;
+}
+
+#about-lenguages ul{
+  display: inline;
+  width: 100%;
+  height: 66.72px;
+  padding-inline-start: 1px;
+}
+
+#about-lenguages ul li{
+  padding: 2px 2px;
+  margin: 0 0;
+  width: 0;
+  height: 0;
+}
+
+.lenguages-html {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 303px;
+  height: 66.72px;
+  left: 12px;
+  top: 169.43px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 1px 36px;
+  padding: 1px;
+}
+
+.social {
+  margin: 1px 35px 20px 35px;
+  padding-inline-start: 1px;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #253858;  
+}
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 30px;
+  padding: 1px 1px 1px 24px;
 }
