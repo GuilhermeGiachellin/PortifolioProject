@@ -374,47 +374,6 @@ h4 {
   height: 30px;
   padding: 1px 1px 1px 24px;
 }
-/*
-#contact-me h2{
-  margin-right: 211px;
-  margin-left: 24px;
-}
-
-#contact-me h2 a{
-  color: #396df2;
-  background-color: #fff;
-  border: 1px solid #396df2;
-  border-radius: 8px;
-  padding: 12px 16px;
-  width: 108px;
-  height: 30px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  margin: 16px 25px 16px 35px;
-}
-
-#contact-me a:hover {
-  background-color: #6070ff;
-  color: rgb(255, 255, 255);
-  border-radius: 8px;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  margin: 16px 25px 16px 35px;
-}
-
-#contact-me a:active {
-  background-color: #2230d2;
-  color: rgb(255, 255, 255);
-  border-radius: 8px;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  margin: 16px 25px 16px 35px;
-}*/
 
 .contact-btn {
   display: flex;
@@ -448,7 +407,6 @@ button:disabled {
   border: 1px solid #c1c7d0;
 }
 
-
 #contact-me {
   display: flex;
   flex-direction: column;
@@ -460,7 +418,7 @@ button:disabled {
   border-radius: 100px 0 0 0;
   margin: 0 auto;
   background-image: url(../assets/shapes-mobile.png);
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: right;
 }
 
