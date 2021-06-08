@@ -390,7 +390,7 @@ h4 {
   border-radius: 8px;
   padding: 12px;
   margin: 12px 24px;
-  
+
 }
 button:hover {
   background-color: #6070ff;
@@ -456,14 +456,12 @@ input {
 }
 
 input[type="text"] {
-  font-size:25px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
 }
 
 input[type="email"] {
-  font-size:25px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
