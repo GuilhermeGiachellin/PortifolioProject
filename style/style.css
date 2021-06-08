@@ -374,3 +374,104 @@ h4 {
   height: 30px;
   padding: 1px 1px 1px 24px;
 }
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  letter-spacing: 0.03em;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px 24px;
+}
+
+button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+button:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  height: 779px;
+  background-color: #6070ff;
+  border-radius: 100px 0 0 0;
+  margin: 0 auto;
+  background-image: url(../assets/shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#contact-me h1 {
+  color: #fff;
+  width: 327px;
+  height: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 90px 0 6px 0;
+}
+
+#contact-me p {
+  color: #ebebff;
+  width: 327px;
+  height: 102px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 6px 24px 77px 24px;
+}
+
+input {
+  width: 327px;
+  height: 48px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin: 10px 24px;
+  text-indent: 16px;
+}
+
+input[type="text"] {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+input[type="email"] {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+textarea {
+  height: 170px;
+  width: 327px;
+  margin: 10px 24px;
+  border-radius: 8px;
+  text-indent: 16px;
+  padding: 10px 0 0 0;
+}
