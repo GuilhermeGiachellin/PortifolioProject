@@ -472,7 +472,7 @@ textarea {
   display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   
   #nav-desk {
     display: block;
@@ -508,6 +508,7 @@ textarea {
     height: 72px;
     align-items: center;
     background-color: #fff;
+    margin: 20px 155px;
   }
 
   .content {
@@ -518,6 +519,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: rgb(255, 255, 255);
+    background-position: center;
     height: 916px;
     margin: 0 auto;
   }
@@ -550,6 +552,18 @@ textarea {
 
   .content .social {
     margin: 12px 18% 255px 18%;
+  }
+
+  .works:hover {
+    border: 2px solid #a7aeff;
+    border-radius: 24px;
+  }
+
+  .works:hover h2 a {
+    background-color: #6070ff;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
   }
 
   .works {
@@ -629,7 +643,7 @@ textarea {
     font-size: 16px;
     line-height: 24px;
     height: 100px;
-    width: 447px;
+    width: 68%;
   }
 
   #about-lenguages-container {
@@ -716,4 +730,8 @@ textarea {
     width: 140px;
     height: 48px
   }
+
+  .qualifications img {
+    margin: 0 10px 0 10px;
+  }  
 }
