@@ -2,10 +2,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  width: 100%;
+}
+
 .container-works {
-  display: grid;
-  justify-content: center;  
+  display: grid;    
   height: 100%;
+  width: 100%;  
   position: relative;
   margin: 0 auto;
   background-color: #f7f7f9;
@@ -14,11 +18,12 @@
 
 .container-works ul {
   padding-inline-start: 1px;
+  width: 100%;
 }
 
 header {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   height: 60px;
   align-items: center;
   background-color: rgb(255, 255, 255);
@@ -27,7 +32,8 @@ header {
 
 .toolbar {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
+  width: 100%;
   margin: 34px 34px;
   align-items: center;
 }
@@ -88,7 +94,7 @@ a {
   background-image: url(../assets/background.png);
   background-repeat: no-repeat;
   background-size: 375px 668px;
-  background-color: rgb(255, 255, 255);  
+  background-color: rgb(255, 255, 255);
   height: 718px;
   margin: 0 auto;
 }
@@ -198,10 +204,10 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(255, 255, 255);  
+  background-color: rgb(255, 255, 255);
   min-height: 566px;
   border-radius: 16px;
-  margin: 88px 24px 88px 24px;
+  margin: 88px 28px 88px 20px;
   padding: 1px 1px 1px 1px;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
@@ -241,7 +247,7 @@ li {
 .works-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   height: 332px;
   margin: 12px 16px 16px 16px;
 }
@@ -276,21 +282,21 @@ li {
 .contact {
   display: flex;
   flex-direction: column;
-  height: 1200px;  
+  height: 1200px;
   margin: 0 auto;
 }
 
 .contact h1 {
-  height: 101px;  
+  height: 101px;
   margin: 114px 24px 5px 24px;
 }
 
 .contact p {
-  height: 144px;  
+  height: 144px;
   margin: 2px 24px 12px 24px;
 }
 
-.big .works h1 {  
+.big .works h1 {
   height: 80px;
 }
 
@@ -355,7 +361,7 @@ h4 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
   height: 30px;
   padding: 1px 1px 1px 24px;
 }
@@ -396,7 +402,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   height: 779px;
   background-color: #6070ff;
   border-radius: 100px 0 0 0;
@@ -418,7 +424,7 @@ button:disabled {
 }
 
 #contact-me p {
-  color: #ebebff;  
+  color: #ebebff;
   height: 102px;
   font-style: normal;
   font-weight: normal;
@@ -456,4 +462,239 @@ textarea {
   border-radius: 8px;
   text-indent: 16px;
   padding: 10px 0 0 0;
+}
+
+.container-works-desktop {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  
+  .container-works {
+    display: none;
+  }
+
+  .container-works-desktop {
+    display: grid;    
+    height: 100%;
+    width: 100%;  
+    position: relative;
+    margin: 0 auto;
+    background-color: #f7f7f9;
+    padding-inline-start: 3px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../assets/Headerbg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(255, 255, 255);
+    height: 916px;
+    margin: 0 auto;
+  }
+
+  .content h1 {
+    font-size: 48px;
+    line-height: 52px;
+    max-height: 122px;
+    width: fit-content;
+    margin: 287px 18% 12px 18%;
+    justify-content: left;
+    width: 922px;
+  }
+
+  .content div {
+    margin: 6px 18%;
+    justify-content: left;
+    width: 922px;
+  }
+
+  .content p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #connect {
+    margin: 0;
+  }
+
+  .content .social {
+    margin: 12px 18% 255px 18%;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 0;
+    background-color: rgb(255, 255, 255);
+    min-height: 496px;
+    width: 80%;
+    border-radius: 16px;
+    margin: 88px 20%;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    width: fit-content;
+  } 
+
+  .desktop-img {
+    width: 544px;
+    height: 448px;    
+  }  
+
+  .works img {
+    margin: 24px 0 24px 24px;
+  }
+
+  .big {
+    flex-direction: row-reverse;
+  }
+
+  .works div {
+    max-height: 492px;
+  }
+
+  .works h1 {
+    margin: 48px 46px 0 46px;
+  }
+
+  .works ul {
+    margin: 20px 46px 22px 46px;
+  }
+
+  .works p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 46px;
+  }
+
+  .languages {
+    margin: 18px 46px;
+  }
+
+  .works h2 {
+    margin: 45px 58px 0 40px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    height: 668px;
+  }
+
+  .about-myself {
+    margin: 142px 0 0 11%;
+    width: 31%;
+  }
+
+  .contact h1 {
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0 0 12px 24px;
+  }
+
+  .contact p {
+    font-size: 16px;
+    line-height: 24px;
+    height: 100px;
+    width: 447px;
+  }
+
+  #about-lenguages-container {
+    width: 47%;
+    margin: 142px 0 45px 0;
+  }
+
+  .lenguages-html {
+    width: 122px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    margin: 0 12px 0 0;
+  }
+
+  .lenguages-html img {
+    margin: 0;
+    padding: 10px 0 16px 10px;
+  }
+
+  .lenguages-html h4 {
+    margin: 0;
+    padding: 0 0 0 10px;
+  }
+
+  #section-class {
+    display: flex;
+    flex-direction: row;
+    margin: 36px 37px;
+  }
+
+  #contact-me {
+    background-image: url(../assets/contact.background.desktop.png);
+    background-repeat: cover;
+    background-position: center;
+    min-height: 846px;
+    width: 100%;
+  }
+
+  #contact-me p {
+    width: 569px;
+    height: 102px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 447px;
+  }
+
+  textarea {
+    height: 170px;
+    width: 447px;
+  }
+
+  button {
+    width: 140px;
+    height: 48px;
+  }
+
+  button:hover {
+    background-color: #6070ff;
+    color: #fff;
+    width: 140px;
+    height: 48px
+  }
+  
+  button:active {
+    background-color: #2230d2;
+    color: #fff;
+    width: 140px;
+    height: 48px
+  }
+  
+  button:disabled {
+    color: #5e6c84;
+    border: 1px solid #c1c7d0;
+    width: 140px;
+    height: 48px
+  }
 }
