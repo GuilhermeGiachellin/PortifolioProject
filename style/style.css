@@ -468,7 +468,25 @@ textarea {
   display: none;
 }
 
+#nav-desk {
+  display: none;
+}
+
 @media (min-width: 800px) {
+  
+  #nav-desk {
+    display: block;
+  }
+
+  #nav-desk ul li a {    
+    font-weight: 500;
+    font-size: 16px;
+    color: #344563;
+  }
+
+  .menu {
+    display: none;
+  }
   
   .container-works {
     display: none;
@@ -552,11 +570,11 @@ textarea {
 
   .desktop-img {
     width: 544px;
-    height: 448px;    
+    height: 448px;
   }  
 
   .works img {
-    margin: 24px 0 24px 24px;
+    margin: 24px;
   }
 
   .big {
@@ -569,11 +587,12 @@ textarea {
 
   .works h1 {
     margin: 48px 46px 0 46px;
+    height: 48px;
   }
 
   .works ul {
     margin: 20px 46px 22px 46px;
-  }
+  }  
 
   .works p {
     font-size: 16px;
@@ -581,7 +600,7 @@ textarea {
     margin: 10px 46px;
   }
 
-  .languages {
+  .works .languages {
     margin: 18px 46px;
   }
 
@@ -603,7 +622,7 @@ textarea {
   .contact h1 {
     font-size: 40px;
     line-height: 52px;
-    margin: 0 0 12px 24px;
+    margin: 46px 0 12px 24px;    
   }
 
   .contact p {
