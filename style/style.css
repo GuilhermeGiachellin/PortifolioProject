@@ -219,7 +219,7 @@ li {
 
 .works h1 {
   font-weight: 700;
-  color: #172b4d;  
+  color: #172b4d;
   height: 36px;
   margin: 1px 15px 1px 16px;
   font-size: 32px;
@@ -485,7 +485,7 @@ textarea {
   }
 
   .menu {
-  display: none;
+    display: none;
   }
 
   .container-works {
@@ -571,8 +571,7 @@ textarea {
     justify-content: center;
     flex-basis: 0;
     background-color: rgb(255, 255, 255);
-    min-height: 496px;
-    width: 80%;
+    min-height: 496px;    
     border-radius: 16px;
     margin: 88px 20%;
     padding: 1px 1px 1px 1px;
@@ -712,7 +711,7 @@ textarea {
     background-color: #6070ff;
     color: #fff;
     width: 140px;
-    height: 48px
+    height: 48px;
   }
 
   button:active {
@@ -726,11 +725,11 @@ textarea {
     color: #5e6c84;
     border: 1px solid #c1c7d0;
     width: 140px;
-    height: 48px
+    height: 48px;
   }
 
   .qualifications img {
     margin: 0 10px 0 10px;
   }
-  
+
 }
