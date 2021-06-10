@@ -477,6 +477,13 @@ textarea {
     display: block;
   }
 
+  .works:hover h2 a {
+    background-color: #6070ff;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
   #nav-desk ul li a {
     font-weight: 500;
     font-size: 16px;
@@ -570,13 +577,6 @@ textarea {
   .works:hover {
     border: 2px solid #a7aeff;
     border-radius: 24px;
-  }
-
-  .works:hover h2 a {
-    background-color: #6070ff;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 8px;
   }
 
   .desktop-img {
@@ -730,5 +730,4 @@ textarea {
   .qualifications img {
     margin: 0 10px 0 10px;
   }
-
 }
