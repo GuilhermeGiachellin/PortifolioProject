@@ -17,7 +17,7 @@ body {
 }
 
 .container-works ul {
-  padding-inline-start: 1px;
+  padding: 0;
   width: 100%;
 }
 
@@ -500,12 +500,12 @@ textarea {
 
   .container-works-desktop {
     display: grid;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
-    position: relative;
-    margin: 0 auto;
     background-color: #f7f7f9;
-    padding-inline-start: 3px;
+    padding: 0;
   }
 
   header {
@@ -521,6 +521,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-image: url(../assets/Headerbg.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -535,7 +536,7 @@ textarea {
     line-height: 52px;
     max-height: 122px;
     width: fit-content;
-    margin: 287px 18% 12px 18%;
+    margin: 287px 530px 12px 0;
     justify-content: left;
   }
 
@@ -556,7 +557,7 @@ textarea {
   }
 
   .content .social {
-    margin: 12px 18% 255px 18%;
+    margin: 12px 710px 255px 0;
   }
 
   .works {
@@ -567,8 +568,8 @@ textarea {
     background-color: rgb(255, 255, 255);
     min-height: 496px;
     border-radius: 16px;
-    margin: 88px 18%;
-    padding: 1px 1px 1px 1px;
+    margin: 88px 30px 0 30px;
+    padding: 0;
     border: 1px solid #dfe1e6;
     box-sizing: border-box;
     width: 1156px;
@@ -589,7 +590,7 @@ textarea {
 
   .works div {
     max-height: 90%;
-    width: 48%;
+    width: 100%;
   }
 
   .works h1 {
