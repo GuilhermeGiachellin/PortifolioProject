@@ -2,6 +2,8 @@
 
 > This project has the objective of recreate a Portifolio from a template already provided. Fidelity between template and project is the top priority.
 
+You can preview the work accesing the following link: https://guilhermegiachellin.github.io/PortifolioProject/ .
+
 Desktop Version
 
 ![image](https://user-images.githubusercontent.com/81584449/121713075-d2873d80-cab2-11eb-8207-2737d54c2392.png)
@@ -20,6 +22,6 @@ Mobile Version
 
 👤 **Author**
 
-- GitHub: @GuilhermeGiachellin(https://github.com/GuilhermeGiachellin))
+- GitHub: @GuilhermeGiachellin(https://github.com/GuilhermeGiachellin)
 - LinkedIn: Guilherme Giachellin(https://www.linkedin.com/in/guilherme-giachellin-2599771b9/)
 
