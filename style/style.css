@@ -93,7 +93,7 @@ a {
   justify-content: center;
   background-image: url(../assets/background.png);
   background-repeat: no-repeat;
-  background-size: 375px 668px;
+  background-size: 100% 668px;
   background-color: rgb(255, 255, 255);
   height: 718px;
   margin: 0 auto;
