@@ -12,16 +12,16 @@ for (let i = 1; i <= 5; i + 1) {
 
 Hamburguer.addEventListener('click', (Event) => {
   Event.preventDefault(); 
-  DisplayMenu.style = 'display: flex; animation-name: display_menu_animation; animation-duration: 0.5s;';
+  DisplayMenu.style = 'display: flex;animation-name: display_menu_animation;animation-duration: 0.5s;';
   for (let i = 0; i < 5; i + 1) {
     sec[i].style = 'filter: blur(3px); -webkit-filter: blur(3px);';
-    }
+  }
 });
 
 ChmBtn.addEventListener('click', (Event) => {
   Event.preventDefault();  
-  setTimeout(function (){ DisplayMenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
-  setTimeout(function (){ DisplayMenu.style = 'display: none;';}, 500);
+  setTimeout(function () { DisplayMenu.style = 'display: flex;animation-name: close_menu_animation;animation-duration: 0.5s;'; }, 0);
+  setTimeout(function () { DisplayMenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i + 1) {
     sec[i].style = '';
   }
@@ -29,8 +29,8 @@ ChmBtn.addEventListener('click', (Event) => {
 
 DsPort.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(function (){ DisplayMenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
-  setTimeout(function (){ DisplayMenu.style = 'display: none;';}, 500);
+  setTimeout(function () { DisplayMenu.style = 'display: flex;animation-name: close_menu_animation;animation-duration: 0.5s;'; }, 0);
+  setTimeout(function () { DisplayMenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i + 1) {
     sec[i].style = '';
   }
@@ -38,8 +38,8 @@ DsPort.addEventListener('click', (Event) => {
 
 DsAbt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(function (){ DisplayMenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
-  setTimeout(function (){ DisplayMenu.style = 'display: none;';}, 500);
+  setTimeout(function () { DisplayMenu.style = 'display: flex;animation-name: close_menu_animation;animation-duration: 0.5s;'; }, 0);
+  setTimeout(function () { DisplayMenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i + 1) {
     sec[i].style = '';
   }
@@ -47,8 +47,8 @@ DsAbt.addEventListener('click', (Event) => {
 
 DsCnt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(function (){ DisplayMenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
-  setTimeout(function (){ DisplayMenu.style = 'display: none;';}, 500);
+  setTimeout(function () { DisplayMenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
+  setTimeout(function () { DisplayMenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i + 1) {
     sec[i].style = '';
   }
@@ -56,9 +56,9 @@ DsCnt.addEventListener('click', (Event) => {
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault ();
+    e.preventDefault();
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-    behavior: 'smooth;'
+      behavior: 'smooth;'
     });
   });
 });
