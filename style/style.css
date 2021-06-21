@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
   background-color: #f7f7f9;
   padding-inline-start: 0;
-  z-index: 3;
+  z-index: 1;
 }
 
 .container-works ul {
@@ -31,6 +31,7 @@ header {
   align-items: center;
   background-color: rgb(255, 255, 255);
   top: 0;
+  z-index: 99;
 }
 
 .toolbar {
@@ -305,6 +306,17 @@ li {
   margin: 2px 24px 12px 24px;
 }
 
+.contact-me h1 {
+  color: #fff;
+  height: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 90px 0 6px 0;
+}
+
 .big .works h1 {
   height: 80px;
 }
@@ -422,17 +434,6 @@ button:disabled {
   background-position: right;
 }
 
-.contact-me h1 {
-  color: #fff;
-  height: 40px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin: 90px 0 6px 0;
-}
-
 .contact-me p {
   color: #ebebff;
   height: 102px;
@@ -489,19 +490,31 @@ textarea {
 }
 
 .display_menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: none;
   flex-direction: column;
-  background-color: #6070ff;
-  opacity: 0.7;
+  background-color: #6070ffd7;  
   width: 100vw;
   height: 100vh;
-  z-index: 1;
-  font-size: 32px;
+  z-index: 100;  
   font-weight: 600;
+}
+
+#display_ul {
+  margin-top: 20vh;
+}
+
+#display_ul li a {
   color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 @keyframes display_menu_animation {
@@ -539,6 +552,7 @@ textarea {
 
   .container-works {
     display: none;
+    z-index: 1;
   }
 
   .container-works-desktop {
@@ -558,6 +572,7 @@ textarea {
     align-items: center;
     background-color: #fff;
     margin: 20px 155px;
+    z-index: 1;
   }
 
   .content {
