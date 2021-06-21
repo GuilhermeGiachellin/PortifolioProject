@@ -17,11 +17,10 @@ Hamburguer.addEventListener('click', (Event) => {
     sec[i].style = 'filter: blur(3px); -webkit-filter: blur(3px);';
   }
 });
-
 ChmBtn.addEventListener('click', (Event) => {
   Event.preventDefault();  
-  setTimeout(function () { DisplayMenu.style = 'display: flex;animation-name: close_menu_animation;animation-duration: 0.5s;'; }, 0);
-  setTimeout(function () { DisplayMenu.style = 'display: none;'; }, 500);
+  setTimeout(() => { DisplayMenu.style = 'display: flex;animation-name: close_menu_animation;animation-duration: 0.5s;'; }, 0);
+  setTimeout(() => { DisplayMenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i + 1) {
     sec[i].style = '';
   }
