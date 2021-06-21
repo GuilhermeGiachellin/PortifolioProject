@@ -186,6 +186,17 @@ li {
   border-radius: 8px;
 }
 
+#display_ul li a {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
 #connect a:hover {
   background-color: #6070ff;
   color: rgb(255, 255, 255);
@@ -495,10 +506,10 @@ textarea {
   left: 0;
   display: none;
   flex-direction: column;
-  background-color: #6070ffd7;  
+  background-color: #6070ffd7;
   width: 100vw;
   height: 100vh;
-  z-index: 100;  
+  z-index: 100;
   font-weight: 600;
 }
 
@@ -506,25 +517,14 @@ textarea {
   margin-top: 20vh;
 }
 
-#display_ul li a {
-  color: white;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
 @keyframes display_menu_animation {
-  0% {height: 0vh;}
-  100% {height: 100vh;}
+  0% { height: 0; }
+  100% { height: 100vh; }
 }
 
 @keyframes close_menu_animation {
-  0% {height: 100vh;}
-  100% {height: 0vh;}
+  0% { height: 100vh; }
+  100% { height: 0; }
 }
 
 @media (min-width: 1080px) {
