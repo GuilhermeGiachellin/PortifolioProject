@@ -38,7 +38,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 34px 34px;
+  margin: 0 34px;
   align-items: center;
   padding-top: 34px;
   padding-bottom: 12px;
@@ -507,8 +507,8 @@ textarea {
   display: none;
   flex-direction: column;
   background-color: #6070ffd7;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 150vh;
   z-index: 100;
   font-weight: 600;
 }
@@ -571,8 +571,7 @@ textarea {
     height: 72px;
     align-items: center;
     background-color: #fff;
-    margin: 20px 155px;
-    z-index: 1;
+    margin: 0 0 20px 0;    
   }
 
   .content {

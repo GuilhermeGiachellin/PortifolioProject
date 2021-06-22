@@ -1,5 +1,5 @@
 const Hamburguer = document.getElementById('hamburguer');
-const Displaymenu = document.getElementById('display_menu');
+const Display = document.getElementById('display_menu');
 const Chmbtn = document.getElementById('chm_btn');
 const Dsport = document.getElementById('ds_port');
 const Dsabt = document.getElementById('ds_abt');
@@ -12,7 +12,7 @@ for (let i = 1; i < 6; i += 1) {
 
 Hamburguer.addEventListener('click', (Event) => {
   Event.preventDefault();
-  Displaymenu.style = 'display: flex; animation-name: display_menu_animation; animation-duration: 0.5s;';
+  Display.style = 'display: flex; animation-name: display_menu_animation; animation-duration: 0.5s;';
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = 'filter: blur(3px); -webkit-filter: blur(3px);';
   }
@@ -20,8 +20,8 @@ Hamburguer.addEventListener('click', (Event) => {
 
 Chmbtn.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
-  setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
+  setTimeout(() => { Display.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
+  setTimeout(() => { Display.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
@@ -29,8 +29,8 @@ Chmbtn.addEventListener('click', (Event) => {
 
 Dsport.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
-  setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
+  setTimeout(() => { Display.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
+  setTimeout(() => { Display.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
@@ -38,8 +38,8 @@ Dsport.addEventListener('click', (Event) => {
 
 Dsabt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
-  setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
+  setTimeout(() => { Display.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
+  setTimeout(() => { Display.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
@@ -47,8 +47,8 @@ Dsabt.addEventListener('click', (Event) => {
 
 Dscnt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
-  setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
+  setTimeout(() => { Display.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
+  setTimeout(() => { Display.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
@@ -58,7 +58,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth;',
+      behavior: 'smooth',
     });
   });
 });
