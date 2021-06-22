@@ -20,7 +20,7 @@ Hamburguer.addEventListener('click', (Event) => {
 
 Chmbtn.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
   setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
@@ -29,7 +29,7 @@ Chmbtn.addEventListener('click', (Event) => {
 
 Dsport.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
   setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
@@ -38,7 +38,7 @@ Dsport.addEventListener('click', (Event) => {
 
 Dsabt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
   setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
@@ -47,7 +47,7 @@ Dsabt.addEventListener('click', (Event) => {
 
 Dscnt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;'; }, 0);
   setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
