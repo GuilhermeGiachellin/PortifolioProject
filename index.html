@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="sec_1">
         <div class="toolbar">
             <div class="logo">
                 <a href="#">
@@ -35,7 +35,7 @@
                 </a>
             </div>
             <div class="menu">
-                <nav><img src="assets/Hamburger.png" alt="Menu"></nav>
+                <nav><img src="assets/Hamburger.png" alt="Menu" id="hamburguer"></nav>
             </div>
             <nav id="nav-desk">
                 <ul>
@@ -46,7 +46,15 @@
             </nav>
         </div>
     </header>
-    <section class="content">
+    <section class="display_menu" id="display_menu">
+        <img src="assets/X.png" alt="X" id="chm_btn">
+        <ul id="display_ul">            
+            <li><a href="#sec_3" id="ds_port">Portifolio</a></li>
+            <li><a href="#sec_4" id="ds_abt">About</a></li>
+            <li><a href="#sec_5" id="ds_cnt">Contact</a></li>
+        </ul>
+    </section>
+    <section class="content" id="sec_2">
         <h1>I’m Guilherme <br> Glad to see you!</h1>
         <div>
             <p>
@@ -66,7 +74,7 @@
             <li><a href="#"><img src="assets/M.png" alt="Hand"></a></li>
         </ul>
     </section>
-    <section class="container-works">
+    <section class="container-works" id="sec_3">
         <ul>
             <li class="works">
                 <img class="mobile-img" src="assets/SnapshootPortfolio.png" alt="Snapshoot">
@@ -241,7 +249,7 @@
             </li>
         </ul>
     </section>
-    <section class="contact">
+    <section class="contact" id="sec_4">
         <div class="about-myself">
             <h1>About<br>Myself</h1>
             <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
@@ -297,7 +305,7 @@
             </ul>
         </div>
     </section>
-    <section id="contact-me">
+    <section class="contact-me" id="sec_5">
         <h1>Contact me</h1>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that
             needs coding. I’d love to help with it</p>
@@ -308,6 +316,7 @@
             <button class="contact-btn" type="submit">Get In Touch</button>
         </form>
     </section>
+    <script type="text/javascript" src="./scrip.js"></script>
 </body>
 
 </html>
