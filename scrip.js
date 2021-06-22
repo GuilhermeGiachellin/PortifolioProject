@@ -38,8 +38,8 @@ Dsport.addEventListener('click', (Event) => {
 
 Dsabt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(()=> { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
-  setTimeout(()=> { Displaymenu.style = 'display: none;'; }, 500);
+  setTimeout(() => { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(() => { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
@@ -54,11 +54,11 @@ Dscnt.addEventListener('click', (Event) => {
   }
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth;'
+      behavior: 'smooth;',
     });
   });
 });
