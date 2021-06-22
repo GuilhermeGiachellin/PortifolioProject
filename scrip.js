@@ -55,9 +55,9 @@ Dscnt.addEventListener('click', (Event) => {
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', function (e) {
+  anchor.addEventListener('click', (e) => {
     e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
+    document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({
       behavior: 'smooth',
     });
   });
