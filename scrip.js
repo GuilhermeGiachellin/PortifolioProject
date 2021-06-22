@@ -1,5 +1,5 @@
 const Hamburguer = document.getElementById('hamburguer');
-const Display_menu = document.getElementById('display_menu');
+const Displaymenu = document.getElementById('display_menu');
 const Chmbtn = document.getElementById('chm_btn');
 const Dsport = document.getElementById('ds_port');
 const Dsabt = document.getElementById('ds_abt');
@@ -12,7 +12,7 @@ for (let i = 1; i < 6; i += 1) {
 
 Hamburguer.addEventListener('click', (Event) => {
   Event.preventDefault();
-  Display_menu.style = 'display: flex; animation-name: display_menu_animation; animation-duration: 0.5s;';
+  Displaymenu.style = 'display: flex; animation-name: display_menu_animation; animation-duration: 0.5s;';
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = 'filter: blur(3px); -webkit-filter: blur(3px);';
   }
@@ -20,8 +20,8 @@ Hamburguer.addEventListener('click', (Event) => {
 
 Chmbtn.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(function () { Display_menu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
-  setTimeout(function () { Display_menu.style = 'display: none;'; }, 500);
+  setTimeout(function close() { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(function close() { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
@@ -30,8 +30,8 @@ Chmbtn.addEventListener('click', (Event) => {
 console.log("This works1")
 Dsport.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(function () { Display_menu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
-  setTimeout(function () { Display_menu.style = 'display: none;'; }, 500);
+  setTimeout(function close() { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(function close() { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
@@ -39,8 +39,8 @@ Dsport.addEventListener('click', (Event) => {
 
 Dsabt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(function () { Display_menu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
-  setTimeout(function () { Display_menu.style = 'display: none;'; }, 500);
+  setTimeout(function close() { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(function close() { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
@@ -48,8 +48,8 @@ Dsabt.addEventListener('click', (Event) => {
 
 Dscnt.addEventListener('click', (Event) => {
   Event.preventDefault();
-  setTimeout(function () { Display_menu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
-  setTimeout(function () { Display_menu.style = 'display: none;'; }, 500);
+  setTimeout(function close() { Displaymenu.style = 'display: flex; animation-name: close_menu_animation; animation-duration: 0.5s;' }, 0);
+  setTimeout(function close() { Displaymenu.style = 'display: none;'; }, 500);
   for (let i = 0; i < 5; i += 1) {
     sec[i].style = '';
   }
