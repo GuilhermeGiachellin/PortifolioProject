@@ -2,7 +2,7 @@
 
 const workInfo = [{
     imagePath: './assets/SnapshootPortfolio.png',
-    dotImg: './assets/Counter.png',
+    clsbtn: './assets/Xpop.png',
     title: 'Tonic',
     features: ['CANOPY', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -11,6 +11,7 @@ const workInfo = [{
 }, {
     imagePath: './assets/SnapshootPortfolio2.png',
     title: 'Tonic',
+    clsbtn: './assets/Xpop.png',
     features: ['CANOPY', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     lenguages: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
@@ -18,6 +19,7 @@ const workInfo = [{
 }, {
     imagePath: './assets/SnapshootPortfolio3.png',
     title: 'Tonic',
+    clsbtn: './assets/Xpop.png',
     features: ['CANOPY', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     lenguages: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
@@ -25,6 +27,7 @@ const workInfo = [{
 }, {
     imagePath: './assets/SnapshootPortfolio4.png',
     title: 'Tonic',
+    clsbtn: './assets/Xpop.png',
     features: ['CANOPY', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     lenguages: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
@@ -33,6 +36,7 @@ const workInfo = [{
 //
 const workSec = document.getElementById(`sec_3`);
 const mainUl = document.createElement(`ul`);
+const displayPopUp = document.getElementById('popUp');
 workSec.appendChild(mainUl);
 
 function create(obj) { return document.createElement(obj) }
@@ -98,7 +102,7 @@ for (let i = 0; i < workInfo.length; i += 1) {
     const btnH2 = create(`h2`);
     const btnA = create(`a`);
 
-    linksArray.push([mainUl, worksBox, 'works']);
+    linksArray.push([mainUl, worksBox]);
     linksArray.push([worksBox, imgWrk]);
     linksArray.push([worksBox, contentDiv]);
     linksArray.push([contentDiv, wrkTitle, 'worksh1', workInfo[i].title]);
@@ -115,58 +119,78 @@ for (let i = 0; i < workInfo.length; i += 1) {
     linksArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[2]]);
     linksArray.push([contentDiv, btnH2]);
     linksArray.push([btnH2, btnA, 'works_btn', 'See Project']);
-    
     imgWrk.src = workInfo[i].imagePath;
     imgWrk.alt = 'preview work';
-    imgDot1.src = workInfo[i].dotImg;
-    imgDot2.src = workInfo[i].dotImg;
+
+    if (i % 2 === 0) {
+        worksBox.className = 'works';
+    } else {
+        worksBox.className = 'big_works';
+    }
 
     btnA.addEventListener('click', (Event) => {
         Event.preventDefault();
-        let popUpdiv = create(`div`);
-        let topDiv = create(`div`);
-        let wrkTitle = create(`h1`);
-        let clsBtn = create(`img`)
-        let featureUl = create(`ul`);
-        let featureLi1 = create(`li`);
-        let featureLi2 = create(`li`);
-        let featureLi3 = create(`li`);
-        let imgWrk = create(`img`);
-        let infoText = create(`p`);
-        let languagesUl = create(`ul`);
-        let languagesLi1 = create(`li`);
-        let languagesLi2 = create(`li`);
-        let languagesLi3 = create(`li`);
-        let frsbtnH2 = create(`h2`);
-        let frsbtnA = create(`a`);
-        let frsbtnImh = create(`img`);
-        let secbtnH2 = create(`h2`);
-        let secbtnA2 = create(`a`);
-        let secbtnImh2 = create(`img`);
-        let popUpArray = []
-        popUpArray.push([popUpdiv, topDiv]);
-        popUpArray.push([topDIV, wrkTitle]);
-        popUpArray.push([topDiv, featureUl]);
+        displayPopUp.style = 'display: flex;';
+        const popUpdiv = create(`div`);
+        const popUpdiv2 = create(`div`);
+        const popUpdiv3 = create(`div`);
+        const wrkTitle = create(`h1`);
+        const clsBtn = create(`img`)
+        const featureUl = create(`ul`);
+        const featureLi1 = create(`li`);
+        const featureLi2 = create(`li`);
+        const featureLi3 = create(`li`);
+        const imgWrk = create(`img`);
+        const infoText = create(`p`);
+        const languagesUl = create(`ul`);
+        const languagesLi1 = create(`li`);
+        const languagesLi2 = create(`li`);
+        const languagesLi3 = create(`li`);
+        const languagesLi4 = create(`li`);
+        const languagesLi5 = create(`li`);
+        const frsbtnH2 = create(`h2`);
+        const frsbtnA = create(`a`);
+        const frsbtnImh = create(`img`);
+        const secbtnH2 = create(`h2`);
+        const secbtnA = create(`a`);
+        const secbtnImh = create(`img`);
+        const popUpArray = []
+        popUpArray.push([popUp, popUpdiv])
+        popUpArray.push([popUp, wrkTitle, 'worksh1', workInfo[i].title]);
+        popUpArray.push([popUp, clsBtn, 'clsbtn']);
+        popUpArray.push([popUp, featureUl]);
         popUpArray.push([featureUl, featureLi1, null, workInfo[i].features[0]]);
         popUpArray.push([featureUl, featureLi2, 'qualifications', workInfo[i].features[1]]);
         popUpArray.push([featureUl, featureLi3, 'qualifications', workInfo[i].features[2]]);
-        popUpArray.push([popUpdiv, imgWrk]);
-        popUpArray.push([popUpdiv, infoText, null, workInfo[i].detailContent]);
-        popUpArray.push([contentDiv, languagesUl, 'languages']);
+        popUpArray.push([popUp, imgWrk])
+        popUpArray.push([popUpdiv, popUpdiv2]);
+        popUpArray.push([popUpdiv, popUpdiv3]);
+        popUpArray.push([popUpdiv2, infoText, null, workInfo[i].detailContent]);
+        popUpArray.push([popUpdiv3, languagesUl, 'languages']);
         popUpArray.push([languagesUl, languagesLi1, null, workInfo[i].lenguages[0]]);
         popUpArray.push([languagesUl, languagesLi2, null, workInfo[i].lenguages[1]]);
         popUpArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[2]]);
-        popUpArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[3]]);
-        popUpArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[4]]);
-        
-        popUpArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[4]]);
-        popUpArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[4]]);
-        popUpArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[4]]);
-        popUpArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[4]]);
-        popUpArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[4]]);
+        popUpArray.push([languagesUl, languagesLi4, null, workInfo[i].lenguages[3]]);
+        popUpArray.push([languagesUl, languagesLi5, null, workInfo[i].lenguages[4]]);
+        popUpArray.push([popUpdiv3, frsbtnH2]);
+        popUpArray.push([frsbtnH2, frsbtnA, 'works_btn', 'See live']);
+        popUpArray.push([frsbtnH2, frsbtnImh]);
+        popUpArray.push([popUpdiv3, secbtnH2]);
+        popUpArray.push([secbtnH2, secbtnA, 'works_btn', 'See source']);
+        popUpArray.push([secbtnH2, secbtnImh]);
 
+        imgWrk.src = workInfo[i].imagePath;
+        imgWrk.alt = 'preview work';
+        clsBtn.src = workInfo[i].clsbtn;
         constructor(popUpArray)
+        //close popup event
+        clsBtn.addEventListener('click', (Event) => {
+            displayPopUp.style = 'display:none;';
+            popUpArray = [];
+        });
     });
+
+
 
 }
 constructor(linksArray)
