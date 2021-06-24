@@ -6,8 +6,16 @@ body {
   width: 100%;
 }
 
+.clsbtn {
+  position: absolute;
+  margin-top: 0;
+  margin-right: 0;
+  float: left;
+}
+
 .container-works {
   display: grid;
+  justify-content: center;
   height: 100%;
   width: 100%;
   position: relative;
@@ -171,7 +179,7 @@ li {
   border-radius: 8px;
 }
 
-.works h2 a:hover {
+.works_btn:hover {
   background-color: #6070ff;
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -179,7 +187,7 @@ li {
   transition: 500ms;
 }
 
-.works h2 a:active {
+.works_btn:active {
   background-color: #2230d2;
   border: 1px solid #2230d2;
   color: rgb(255, 255, 255);
@@ -218,10 +226,6 @@ li {
   margin: 10px 16px 10px 13px;
 }
 
-.big {
-  min-height: 612px;
-}
-
 .works {
   display: flex;
   flex-direction: column;
@@ -241,18 +245,18 @@ li {
 
 .worksh1 {
   font-weight: 700;
-  color: #172b4d;
-  height: 36px;
-  margin: 1px 15px 1px 16px;
+  color: #172b4d;  
   font-size: 32px;
   line-height: 44px;
+  margin: 48px 46px 0 46px;
+  height: 48px;
 }
 
-.big h1 {
+.big_works>h1 {
   height: 88px;
 }
 
-.big .works ul {
+.big_works .works>ul {
   padding-inline-start: 1px;
   margin: 7px 16px 7px 13px;
 }
@@ -297,6 +301,18 @@ li {
   position: relative;
 }
 
+.big_works .languages>li {
+  font-weight: 400;
+  font-size: 12px;
+  display: inline;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 1px 1px 1px 1px;
+  position: relative;
+}
+
 .works>h2 {
   margin: 30px 24px 50px 16px;
 }
@@ -329,7 +345,7 @@ li {
   margin: 90px 0 6px 0;
 }
 
-.big .works h1 {
+.big_works .works>h1 {
   height: 80px;
 }
 
@@ -487,10 +503,6 @@ textarea {
   padding: 10px 0 0 0;
 }
 
-.container-works-desktop {
-  display: none;
-}
-
 #nav-desk {
   display: none;
 }
@@ -527,12 +539,28 @@ textarea {
   0% { height: 100vh; }
   100% { height: 0; }
 }
+#popUp {
+  display: none;
+}
 
-.popup {
-  display: flex;
-  flex-direction: column;
+.popup {  
+  flex-direction: column-reverse;
   height: 90vh;
-  width: 95vh;
+  width: 95vw;
+  z-index: 200;
+  position: absolute;
+  background-color: #fff;
+}
+
+.popup .languages>li {
+  font-weight: 400;
+  font-size: 12px;
+  display: inline;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 1px 1px 1px 1px;
 }
 
 @media (min-width: 1080px) {
@@ -542,11 +570,22 @@ textarea {
 
   .popup {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     height: 90vh;
-    width: 95vh;
+    width: 95vw;
   }
-      
+
+  .popup .languages>li {
+    font-weight: 400;
+    font-size: 12px;
+    display: inline;
+    color: #6070ff;
+    background-color: #ebebff;
+    border-radius: 8px;
+    padding: 4px 12px;
+    margin: 1px 1px 1px 1px;
+  }
+
   .works:hover h2 a {
     background-color: #6070ff;
     color: rgb(255, 255, 255);
@@ -563,22 +602,7 @@ textarea {
 
   .menu {
     display: none;
-  }
-
-  .container-works {
-    display: none;
-    z-index: 1;
-  }
-
-  .container-works-desktop {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-color: #f7f7f9;
-    padding: 0;
-  }
+  }  
 
   header {
     display: flex;
@@ -658,18 +682,24 @@ textarea {
     margin: 24px;
   }
 
-  .big {
+  .big_works {    
+    display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    flex-basis: 0;
+    background-color: rgb(255, 255, 255);
+    min-height: 496px;
+    border-radius: 16px;
+    margin: 88px 28px 88px 20px;
+    padding: 0;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    width: 1156px;
   }
 
   .works div {
     max-height: 90%;
     width: 100%;
-  }
-
-  .works h1 {
-    margin: 48px 46px 0 46px;
-    height: 48px;
   }
 
   .works ul {
@@ -680,6 +710,23 @@ textarea {
     font-size: 16px;
     line-height: 24px;
     margin: 10px 46px;
+  }
+
+  .big_works p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 46px
+  }
+
+  .big_works ul li {
+    font-weight: 600;
+    color: #344563;
+    font-size: 13px;
+    display: inline;
+    height: 13px;
+    padding: 0 0;
+    margin: 20px 10px 22px 10px;
   }
 
   .works .languages {
