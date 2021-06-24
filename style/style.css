@@ -13,7 +13,7 @@ body {
 .clsbtn {
   position: absolute;
   top: 5vh;
-  right: 5vw; 
+  right: 5vw;
 }
 
 .container-works {
@@ -267,7 +267,7 @@ li {
 
 .worksh1 {
   font-weight: 700;
-  color: #172b4d;  
+  color: #172b4d;
   font-size: 32px;
   line-height: 44px;
   margin: 5px 46px 0 16px;
@@ -278,7 +278,7 @@ li {
   height: 88px;
 }
 
-.big_works .works>ul {
+.big_works .works > ul {
   padding-inline-start: 1px;
   margin: 7px 16px 7px 13px;
 }
@@ -290,6 +290,7 @@ li {
   display: inline;
   height: 13px;
   padding: 0 0;
+  margin: 20px 10px 22px 10px;
 }
 
 .big_works ul li {
@@ -327,7 +328,7 @@ li {
   margin: 5px 1px 45px 1px;
 }
 
-.works .languages>li {
+.works .languages > li {
   font-weight: 400;
   font-size: 12px;
   display: inline;
@@ -339,7 +340,7 @@ li {
   position: relative;
 }
 
-.big_works .languages>li {
+.big_works .languages > li {
   font-weight: 400;
   font-size: 12px;
   display: inline;
@@ -351,7 +352,7 @@ li {
   position: relative;
 }
 
-.works>h2 {
+.works > h2 {
   margin: 30px 24px 50px 16px;
 }
 
@@ -383,7 +384,7 @@ li {
   margin: 90px 0 6px 0;
 }
 
-.big_works .works>h1 {
+.big_works .works > h1 {
   height: 80px;
 }
 
@@ -408,6 +409,17 @@ h3 {
   width: 100%;
   height: 66.72px;
   padding-inline-start: 1px;
+}
+
+.popup .languages > li {
+  font-weight: 400;
+  font-size: 12px;
+  display: inline;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 1px 1px 1px 1px;
 }
 
 #about-lenguages ul li {
@@ -594,32 +606,27 @@ textarea {
   overflow-y: scroll;
 }
 
-.popup .languages>li {
-  font-weight: 400;
-  font-size: 12px;
-  display: inline;
-  color: #6070ff;
-  background-color: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
-  margin: 1px 1px 1px 1px;
-}
-
 .popUpcontent {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.popUpcontent>div>p {
+.content p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.popUpcontent > div > p {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  line-height: 24px;  
+  line-height: 24px;
 }
 
 .btn_div {
-  display: flex;    
+  display: flex;
 }
 
 .btn_div .works_btn {
@@ -647,10 +654,17 @@ textarea {
     align-items: center;
     height: 100%;
     width: 100%;
-    position: relative;    
-    margin: 0 auto;    
+    position: relative;
+    margin: 0 auto;
     padding-inline-start: 0;
     z-index: 1;
+  }
+
+  .big_works p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 46px;
   }
 
   .popup {
@@ -661,7 +675,7 @@ textarea {
     z-index: 55;
     position: fixed;
     background-color: #fff;
-    margin-top: 10vh;    
+    margin-top: 10vh;
   }
 
   .popUpcontent {
@@ -669,15 +683,37 @@ textarea {
     flex-direction: row;
   }
 
-  .popUpcontent>div>p {
+  .contact p {
+    font-size: 16px;
+    line-height: 24px;
+    height: 130px;
+    width: 68%;
+  }
+
+  .contact-me p {
+    width: 569px;
+    height: 102px;
+  }
+
+  .popUpconten > div > p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    margin: 7px 7px 7px 24px;   
+    margin: 7px 7px 7px 24px;
   }
 
-  .popup .languages>li {
+  .big_works ul li {
+    font-weight: 600;
+    color: #344563;
+    font-size: 13px;
+    display: inline;
+    height: 13px;
+    padding: 0 0;
+    margin: 20px 10px 22px 10px;
+  }
+
+  .popup .languages > li {
     font-weight: 400;
     font-size: 12px;
     display: inline;
@@ -696,12 +732,12 @@ textarea {
     transition: 500ms;
   }
 
-  .big_works .worksh1 {
+  .worksh1 {
     height: 48px;
     margin: 48px 0 0 46px;
   }
 
-  .worksh1 {
+  .big_works .worksh1 {
     height: 48px;
     margin: 48px 0 0 46px;
   }
@@ -722,7 +758,7 @@ textarea {
 
   .menu {
     display: none;
-  }  
+  }
 
   header {
     display: flex;
@@ -762,12 +798,6 @@ textarea {
     width: 922px;
   }
 
-  .content p {
-    margin: 0;
-    font-size: 20px;
-    line-height: 28px;
-  }
-
   #connect {
     margin: 0;
   }
@@ -798,13 +828,6 @@ textarea {
     transition: 200ms;
   }
 
-  .big_works:hover {
-    border: 2px solid #a7aeff;
-    border-radius: 24px;
-    transform: scale(1.05);
-    transition: 200ms;
-  }
-
   .works img {
     margin: 24px;
   }
@@ -824,6 +847,13 @@ textarea {
     width: 1156px;
   }
 
+  .big_works:hover {
+    border: 2px solid #a7aeff;
+    border-radius: 24px;
+    transform: scale(1.05);
+    transition: 200ms;
+  }
+
   .works div {
     max-height: 90%;
     width: 100%;
@@ -837,38 +867,11 @@ textarea {
     margin: 20px 46px 22px 46px;
   }
 
-  .works ul li{
-    margin: 20px 10px 22px 10px;
-  }
-
-  .works p {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 10px 46px;
-  }
-
-  .big_works p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 10px 46px
-  }
-
-  .big_works ul li {
-    font-weight: 600;
-    color: #344563;
-    font-size: 13px;
-    display: inline;
-    height: 13px;
-    padding: 0 0;
-    margin: 20px 10px 22px 10px;
-  }
-
   .works .languages {
     margin: 18px 46px;
   }
 
-  .works>h2 {
+  .works > h2 {
     margin: 45px 58px 0 40px;
   }
 
@@ -887,13 +890,6 @@ textarea {
     font-size: 40px;
     line-height: 52px;
     margin: 46px 0 12px 24px;
-  }
-
-  .contact p {
-    font-size: 16px;
-    line-height: 24px;
-    height: 130px;
-    width: 68%;
   }
 
   #about-lenguages-container {
@@ -932,11 +928,6 @@ textarea {
     background-position: center;
     min-height: 846px;
     width: 100%;
-  }
-
-  .contact-me p {
-    width: 569px;
-    height: 102px;
   }
 
   #connect2 {
@@ -1005,7 +996,7 @@ textarea {
   }
 
   .btn_div {
-    display: flex;    
+    display: flex;
   }
 
   .btn_div .works_btn {
@@ -1022,7 +1013,7 @@ textarea {
     align-items: center;
   }
 
-  .img_div>img {
+  .img_div > img {
     width: 80%;
   }
 }
