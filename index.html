@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0QVJQXN99"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -10,7 +11,7 @@
 
         gtag('config', 'G-W0QVJQXN99');
     </script>
-    <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -140,8 +141,7 @@
             needs coding. I’d love to help with it</p>
         <form onsubmit="return formValidate()" action="https://formspree.io/f/xknkbwpa" method="POST" id="contact-form">
             <input type="text" name="name" placeholder="Name" required maxlength="30">            
-            <input type="email" name="_replyto" placeholder="Email" required id="email_input">
-            <img src="" alt="" id="email_val_img">
+            <input type="email" name="_replyto" placeholder="Email" required id="email_input">            
             <textarea name="message" placeholder="Write your message here" required maxlength="500"></textarea>
             <div id="form_div"><p itemref="form_msg">Email address should not <br> contain upercase characters!</p></div>
             <button class="contact-btn" type="submit">Get In Touch</button>
