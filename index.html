@@ -138,10 +138,12 @@
         <h1>Contact me</h1>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that
             needs coding. I’d love to help with it</p>
-        <form action="https://formspree.io/f/xknkbwpa" method="POST" id="contact-form">
-            <input type="text" name="name" placeholder="Name" required maxlength="30">
-            <input type="email" name="_replyto" placeholder="Email" required>
+        <form onsubmit="return formValidate()" action="https://formspree.io/f/xknkbwpa" method="POST" id="contact-form">
+            <input type="text" name="name" placeholder="Name" required maxlength="30">            
+            <input type="email" name="_replyto" placeholder="Email" required id="email_input">
+            <img src="" alt="" id="email_val_img">
             <textarea name="message" placeholder="Write your message here" required maxlength="500"></textarea>
+            <div id="form_div"><p itemref="form_msg">Email address should not <br> contain upercase characters!</p></div>
             <button class="contact-btn" type="submit">Get In Touch</button>
         </form>
     </section>
