@@ -7,7 +7,6 @@ const Dscnt = document.getElementById('ds_cnt');
 const sec = [];
 const emailInput = document.getElementById('email_input');
 const announce = document.getElementById('form_div');
-const contactForm = document.getElementById('contact_form');
 const emailValImg = document.getElementById('email_val_img');
 
 function formValidate() {
