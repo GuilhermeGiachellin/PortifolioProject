@@ -532,6 +532,12 @@ input {
   text-indent: 16px;
 }
 
+#email_input {
+  background-repeat: no-repeat;
+  background-position: 290px;
+  background-size: 6vw;
+}
+
 input[type="text"] {
   font-style: normal;
   font-weight: normal;
@@ -590,6 +596,36 @@ textarea {
   100% { height: 0; }
 }
 
+.content p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.popUpcontent > div > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#form_div {
+  display: none;
+  background-color: #f7f7f9;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 8px;
+  z-index: 4;
+}
+
+#form_div > p {
+  color: #000;
+  font-size: 20px;
+  margin: 4px;
+  width: fit-content;
+  height: fit-content;
+}
+
 .popup {
   display: flex;
   flex-direction: column;
@@ -610,19 +646,6 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.content p {
-  margin: 0;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.popUpcontent > div > p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
 }
 
 .btn_div {
@@ -646,6 +669,11 @@ textarea {
 
   .works_btn {
     margin: 30px 46px 50px 46px;
+  }
+
+  #email_input {
+    background-size: 2vw;
+    background-position: 400px;
   }
 
   #popUp {

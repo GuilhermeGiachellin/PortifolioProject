@@ -5,6 +5,32 @@ const Dsport = document.getElementById('ds_port');
 const Dsabt = document.getElementById('ds_abt');
 const Dscnt = document.getElementById('ds_cnt');
 const sec = [];
+const emailInput = document.getElementById('email_input');
+const announce = document.getElementById('form_div');
+const emailValImg = document.getElementById('email_val_img');
+
+function formValidate() {
+  const strVal = emailInput.value;
+  if (strVal.toLowerCase() !== strVal) {
+    announce.style = 'display: inline;';
+    return false;
+  }
+  return true;
+}
+if (emailValImg < 0) {
+  formValidate();
+}
+
+emailInput.addEventListener('input', (event) => {
+  event.preventDefault();
+  const strVal2 = emailInput.value;
+  announce.style = '';
+  if (strVal2.toLowerCase() !== strVal2) {
+    emailInput.style = 'background-image: url(./assets/false.png)';
+  } else {
+    emailInput.style = 'background-image: url(./assets/true.png)';
+  }
+});
 
 for (let i = 1; i < 6; i += 1) {
   sec.push(document.getElementById(`sec_${i}`));
