@@ -19,9 +19,8 @@ function storageAvailable(type) {
 }
 
 const checkLocalStorage = () => {
-  if (storageAvailable('localStorage')) {
-    // Save input values to local storage
-    const setFormValues = () => {
+  if (storageAvailable('localStorage')) {    
+    const formObj = () => {
       const dataForm = {
         name: form.input_name.value, 
         email: form._replyto.value,
@@ -31,11 +30,10 @@ const checkLocalStorage = () => {
       localStorage.setItem('dataForm', JSON.stringify(dataForm));
     };
 
-    form.input_name.addEventListener('change', setFormValues);
-    form._replyto.addEventListener('change', setFormValues);
-    form.message.addEventListener('change', setFormValues);
-
-    // Retrieve Values from Local Storage
+    form.input_name.addEventListener('input', formObj);
+    form._replyto.addEventListener('input', formObj);
+    form.message.addEventListener('input', formObj);
+    
     let name = '';
     let email = '';
     let message = '';
